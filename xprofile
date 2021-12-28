@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pidof pcmanfm || pcmanfm -d &
+pidof flameshot || flameshot &
+pidof dunst || dunst &
+udiskie &
+
+# Pipewire stuff
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
